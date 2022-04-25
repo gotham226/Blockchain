@@ -74,14 +74,46 @@
             <!-- links -->
           </div>
           <!-- Collapsible wrapper -->
+
+          
+            </head>
+            <body>
+            
+            
       
           <!-- Right elements -->
           <div class="d-flex align-items-center">
+            <form>
+              <input type="text" name="search">
+            </form>
             <!-- Icon -->
             <a class="text-reset me-3" href="#">
               <i class="fas fa-shopping-cart"></i>
             </a>
-      
+            <style> 
+              input[type=text] {
+                width: 20%;
+                height: 40px;
+                /*box-sizing: border-box;*/
+                margin-right: 3%;
+                float: right;
+                border: 2px solid #ccc;
+                border-radius: 50px;
+                font-size: 17px;
+                background-color: rgb(223, 223, 223);
+                background-image: url('./img/searchicon.png');
+                background-position: 10px 10px; 
+                background-repeat: no-repeat;
+                padding: 2%;
+                -webkit-transition: width 0.3s ease-in-out;
+                transition: width 0.3s ease-in-out;
+              }
+              
+              input[type=text]:focus {
+                width: 100%;
+                
+              }
+              </style>
             <!-- Notifications -->
             <div class="dropdown">
               <a
@@ -148,11 +180,13 @@
         </div>
         <!-- Container wrapper -->
       </nav>
+      
     </header>
     
 <!--Crop du site, exposition des NFT's-->
 <main>
   <section class="our-webcoderskull padding-lg">
+    
     <div class="container">
       <div class="row heading heading-icon">
       </div>
@@ -198,5 +232,7 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript"></script>
+
+    <script src="./js/search.js"></script>
   </body>
 </html>
