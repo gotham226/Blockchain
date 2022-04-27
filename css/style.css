@@ -18,9 +18,10 @@ ul{
 }
 .padding-lg {
 	display: block;
-	padding-top: 60px;
+	padding-top: 10%;
 	padding-bottom: 60px;
 }
+
 .practice-area.padding-lg {
     padding-bottom: 55px;
     padding-top: 55px;
@@ -135,7 +136,7 @@ ul{
   background-image: url('../img/searchicon.png');
     background-size: 90% 90% ,contain;
     background-repeat: no-repeat;
-    box-shadow: inset 2px 0 4px #9b9b9b;
+   
  
 }
 
@@ -173,12 +174,16 @@ ul{
 }
 
 @media screen and (max-width: 620px) {
-.searchBox:hover > .searchInput {
-    width: 150px;
-    padding: 0 6px;
-}
+    .searchBox:hover > .searchInput {
+        width: 150px;
+        padding: 0 6px;
+    }
+    .padding-lg {
+        display: block;
+        padding-top: 147px;
+        padding-bottom: 60px;
+    }
 }
 
 
-      
 
