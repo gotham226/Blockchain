@@ -115,7 +115,69 @@ ul{
    color:#025a8e;
 
 }
+.searchBox {
+    background: #f8f9fa;
+    border-radius: 40px;
+    margin: 0 1% 0 0;
+    padding-top: 7px;
+}
 
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+    
+   
+}
+
+.searchBox:hover > .searchButton {
+  background:#f8f9fa;
+  color : #2f3640;
+  background-image: url('../img/searchicon.png');
+    background-size: 90% 90% ,contain;
+    background-repeat: no-repeat;
+    box-shadow: inset 2px 0 4px #9b9b9b;
+ 
+}
+
+.searchButton {
+    color: rgb(0, 0, 0);
+    border: 0px solid rgb(173, 173, 173);
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f8f9fa;
+    background-image: url('../img/searchicon.png');
+    background-size: 90% 90% ,contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    background-color: #f8f9fa;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: rgb(46, 46, 46);
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+    border-bottom: 1px solid grey;
+
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+}
 
 
       
