@@ -3,12 +3,12 @@ body{
     height: 600px;
     margin: auto;
     
-    
+    text-align: center;
 }
 
 form{
     width: 40%;
-    height: 420px;    
+    height: 432px;    
     margin: auto;
     margin-top: 5%;
     text-align: center;
@@ -41,3 +41,4 @@ footer{
     margin-top: 2%;
     font-size: smaller;
 }
+
