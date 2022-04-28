@@ -18,9 +18,10 @@ ul{
 }
 .padding-lg {
 	display: block;
-	padding-top: 60px;
+	padding-top: 10%;
 	padding-bottom: 60px;
 }
+
 .practice-area.padding-lg {
     padding-bottom: 55px;
     padding-top: 55px;
@@ -51,7 +52,6 @@ ul{
 	display:inline-block;
 }
 
-
 .our-webcoderskull{
   background-color: white;
   
@@ -60,22 +60,24 @@ ul{
    float:left; 
    width:100%; 
    background:#fff; 
-   padding:30px 20px; 
+    
    text-align:center; 
    border:2px solid #d5d5d5;
    margin: 0 0 28px;
 }
 .our-webcoderskull .cnt-block figure{
-   width:148px; 
-   height:148px; 
+   width:100%; 
+   height:60%; 
    border-radius:100%; 
    display:inline-block;
    margin-bottom: 15px;
 }
 .our-webcoderskull .cnt-block img{ 
-   width:148px; 
-   height:148px; 
-   border-radius:100%; 
+   width:100%; 
+   height:100%; 
+   border-radius: 5px;
+   padding: 0%;
+   text-align: center;
 }
 .our-webcoderskull .cnt-block h3{ 
    color:#2a2a2a; 
@@ -83,6 +85,7 @@ ul{
    font-weight:500; 
    padding:6px 0;
    text-transform:uppercase;
+   text-align: center;
 }
 .our-webcoderskull .cnt-block h3 a{
   text-decoration:none;
@@ -111,48 +114,73 @@ ul{
 }
 .our-webcoderskull .cnt-block .follow-us li .fa:hover{ 
    color:#025a8e;
+
+}
+.searchBox {
+    background: #f8f9fa;
+    border-radius: 40px;
+    margin: 0 1% 0 0;
+    padding-top: 7px;
 }
 
-.searchbar{
-    margin-bottom: auto;
-    margin-top: auto;
-    height: 60px;
-    background-color: #353b48;
-    border-radius: 30px;
-    padding: 10px;
-    }
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+    
+   
+}
 
-    .search_input{
-    color: white;
-    border: 0;
-    outline: 0;
-    background: none;
-    width: 0;
-    caret-color:transparent;
-    line-height: 40px;
-    transition: width 0.4s linear;
-    }
+.searchBox:hover > .searchButton {
+  background:#f8f9fa;
+  color : #2f3640;
+  background-image: url('../img/searchicon.png');
+    background-size: 90% 90% ,contain;
+    background-repeat: no-repeat;
+   
+ 
+}
 
-    .searchbar:hover > .search_input{
-    padding: 0 10px;
-    width: 450px;
-    caret-color:#70c8f0;
-    transition: width 0.4s linear;
-    }
-
-    .searchbar:hover > .search_icon{
-    background: white;
-    color: #70c8f0;
-    }
-
-    .search_icon{
-    height: 40px;
-    width: 40px;
+.searchButton {
+    color: rgb(0, 0, 0);
+    border: 0px solid rgb(173, 173, 173);
     float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f8f9fa;
+    background-image: url('../img/searchicon.png');
+    background-size: 90% 90% ,contain;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    color:white;
-    text-decoration:none;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    background-color: #f8f9fa;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: rgb(46, 46, 46);
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+    border-bottom: 1px solid grey;
+
+}
+
+@media screen and (max-width: 620px) {
+    .searchBox:hover > .searchInput {
+        width: 150px;
+        padding: 0 6px;
     }
+    .padding-lg {
+        display: block;
+        padding-top: 147px;
+        padding-bottom: 60px;
+    }
+}

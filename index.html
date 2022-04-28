@@ -29,11 +29,11 @@
   </head>
 
 
-  <body>
+  <body onload="commencement()">
 
     <header>
       <!-- NavBar-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav style=" width: 100%; height: 100px; z-index: 15; position: fixed;" class="navbar navbar-expand-lg navbar-light bg-light">
         
         <div class="container-fluid">
           
@@ -53,44 +53,40 @@
            
             <a class="navbar-brand mt-2 mt-lg-0" href="#">
               <img
-                src="img/logoCfpt.png"
+                src="img/logotruc.png"
                 height="30"
-                alt="MDB Logo"
+                alt="CloseLake Logo"
                 loading="lazy"
               />
             </a>
-            <!-- Links -->
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                
-                <a class="nav-link" href="#">Accueil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Publier</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">À propos</a>
-              </li>
-            </ul>
-          </div>
-          <!-- Search Bar -->
-          <div class="container h-100">
-            <div class="d-flex justify-content-center h-100">
-              <div class="searchbar">
-                <input class="search_input" type="text" name="" placeholder="Search...">
-                <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
-              </div>
+            <div>
+              <h5 style="margin: 0;"><a style="padding: 0;" class="navbar-brand mt-2 mt-lg-0" href="#">CloseLake</a></h5>
+              <h9><a style="padding: 0; text-decoration: none; color: grey;" href="https://edu.ge.ch/site/cfpt/">CFPT</h9></a>
+
             </div>
+            <!-- links -->
           </div>
-          <!-- Right elements -->
-          <div class="d-flex align-items-center">
-            <!-- Icon -->
-            <a class="text-reset me-3" href="#">
-              <i class="fas fa-shopping-cart"></i>
-            </a>
+          <!-- Collapsible wrapper -->
+
+          
+            </head>
+            <body>
+            
+            
       
+              <!-- METTRE LA SEARCH BAR -->
+              <div class="searchBox">
+    
+                <input class="searchInput"type="text" name="" placeholder="Search">
+                <button class="searchButton" href="#">
+                    <i class="material-icons"></i>
+                </button>
+              </div>
+          <!-- Right elements -->
+          <div class="d-flex align-items-center" style="padding: 5px; border-left: 1px solid #d1d1d1; padding-left: 1%;";>
+
             <!-- Notifications -->
-            <div class="dropdown">
+            <div class="dropdown" >
               <a
                 class="text-reset me-3 dropdown-toggle hidden-arrow"
                 href="#"
@@ -117,104 +113,30 @@
                 </li>
               </ul>
             </div>
-            <!-- Avatar -->
+            <!-- zone de connexion et de compte -->
             <div class="dropdown">
-              <a
-                class="dropdown-toggle d-flex align-items-center hidden-arrow"
-                href="#"
-                id="navbarDropdownMenuAvatar"
-                role="button"
-                data-mdb-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                  class="rounded-circle"
-                  height="25"
-                  alt="Black and White Portrait of a Man"
-                  loading="lazy"
-                />
-              </a>
-              <ul
-                class="dropdown-menu dropdown-menu-end"
-                aria-labelledby="navbarDropdownMenuAvatar"
-              >
-                <li>
-                  
-                  <a class="dropdown-item" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                      <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                    </svg>
-                    Mon compte
-                  </a>
-                </li>
-                <li>
-                  
-                  <a class="dropdown-item" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
-                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
-                  </svg> 
-                  Réglages
-                  </a>
-                </li>
-                <li>
-                  
-                  <a class="dropdown-item" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
-                      <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
-                    </svg>
-                    Déconnexion
-                  </a>
-                </li>
-              </ul>
+              <a href="inscription.html" style="color: black; ">Inscription</a>
+              <a href="connexion.html"><button class="btn btn-primary">Connexion</button></a>
+              
             </div>
           </div>
+
           <!-- Right elements -->
         </div>
         <!-- Container wrapper -->
       </nav>
+      
     </header>
     
 <!--Corp du site, exposition des NFT's-->
 <main>
   <section class="our-webcoderskull padding-lg">
+    
     <div class="container">
       <div class="row heading heading-icon">
       </div>
-      <ul class="row">
-        <li class="col-12 col-md-6 col-lg-3">
-            <div class="cnt-block equal-hight" style="height: 349px;">
-              <figure><img src="http://www.webcoderskull.com/img/team4.png" class="img-responsive" alt=""></figure>
-              <h3><a href="http://www.webcoderskull.com/">Web coder skull</a></h3>
-              <p>Freelance Web Developer</p>
-              
-            </div>
-        </li>
-        <li class="col-12 col-md-6 col-lg-3">
-            <div class="cnt-block equal-hight" style="height: 349px;">
-              <figure><img src="http://www.webcoderskull.com/img/team1.png" class="img-responsive" alt=""></figure>
-              <h3><a href="#">Kappua </a></h3>
-              <p>Freelance Web Developer</p>
-            
-            </div>
-        </li>
-        <li class="col-12 col-md-6 col-lg-3">
-            <div class="cnt-block equal-hight" style="height: 349px;">
-              <figure><img src="http://www.webcoderskull.com/img/team4.png" class="img-responsive" alt=""></figure>
-              <h3><a href="http://www.webcoderskull.com/">Manish </a></h3>
-              <p>Freelance Web Developer</p>
-              
-            </div>
-        </li>
-        <li class="col-12 col-md-6 col-lg-3">
-            <div class="cnt-block equal-hight" style="height: 349px;">
-              <figure><img src="http://www.webcoderskull.com/img/team2.png" class="img-responsive" alt=""></figure>
-              <h3><a href="http://www.webcoderskull.com/">Atul </a></h3>
-              <p>Freelance Web Developer</p>
-              
-            </div>
-        </li>
+      <!-- remplissage -->
+      <ul id="collectionNft" class="row">
       </ul>
     </div>
   </section>
@@ -223,5 +145,8 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript"></script>
+
+    <script src="./js/search.js"></script>
+    <script src="./js/testImages.js"></script>
   </body>
 </html>
